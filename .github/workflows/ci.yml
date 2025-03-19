@@ -42,3 +42,11 @@ jobs:
             - name: Run Tests
               run: npm test
 
+    deploy:
+        name: Simulate Deployment
+        runs-on: ubuntu-22.04
+        needs: test
+        steps:
+            - name: Deployment Simulation
+              run: echo "Deployment successful"
+
